@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+}
+
+body{
+  background-color: rgb(233, 233, 233);
+}
+
+.app{
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app__left {
+  flex: 0.9; /*Uses 90% of screen*/
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+}
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__infobox {
+  display: flex;
+  justify-content: space-between;
+}
+.app__expandtable{
+  
+}
+.app__graphsection {
+  margin-top: 40px;
+}
+
+@media(max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}

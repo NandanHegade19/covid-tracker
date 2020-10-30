@@ -1,0 +1,26 @@
+ .table {
+     margin-top: 20px;
+     overflow: scroll;
+     height: 400px;
+     color: #6a5d5d;
+     background-color: white;
+ }
+.table__heading{
+    display: flex;
+    justify-content: space-between;
+}
+ .table tr {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .table td {
+     padding: 0.5rem;
+     border: none;
+ }
+
+ {/*Odd number row is colored gray*/}
+ .table tr:nth-of-type(odd){
+     background-color: #f3f2f8;
+ }
+

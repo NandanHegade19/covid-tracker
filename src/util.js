@@ -39,7 +39,7 @@ export const sortData = (data) => {
 //infobox
 export const prettyPrintStat = (stat) =>
   stat ? `+${numeral(stat).format("0.0a")}` : "+0";
-
+  
 export const showDataOnMap = (data, casesType = "cases") =>
     //console.log("Dataaaaaaaaaaaaa", data)
   data.map((country) => (
@@ -49,8 +49,10 @@ export const showDataOnMap = (data, casesType = "cases") =>
       fillColor={casesTypeColors[casesType].hex}
       fillOpacity={0.4}
       radius={
-        Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
+        (Math.sqrt(country[casesType]) * (casesTypeColors[casesType].multiplier)) -(0.7 * (Math.sqrt(country[casesType]) * (casesTypeColors[casesType].multiplier)))
       }
+      
+      
     >
       <Popup>
         <div className="info-container">
